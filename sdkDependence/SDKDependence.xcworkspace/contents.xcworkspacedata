@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:SDK3/SDK3.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SDK2/SDK2.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Sdk1/Sdk1.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SDKDependence/SDKDependence.xcodeproj">
+   </FileRef>
+</Workspace>
