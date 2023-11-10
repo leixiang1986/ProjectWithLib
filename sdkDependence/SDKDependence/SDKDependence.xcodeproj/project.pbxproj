@@ -17,7 +17,21 @@
 		E9DB5C7B2AFCA79E0071C5CA /* Sdk1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9DB5C782AFCA79E0071C5CA /* Sdk1.framework */; };
 		E9DB5C7C2AFCA79E0071C5CA /* SDK3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9DB5C792AFCA79E0071C5CA /* SDK3.framework */; };
 		E9DB5C7D2AFCA79E0071C5CA /* SDK2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9DB5C7A2AFCA79E0071C5CA /* SDK2.framework */; };
+		E9DB5CAC2AFCFB840071C5CA /* ImageBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E9DB5CA32AFCFA620071C5CA /* ImageBundle.bundle */; };
+		E9DB5CAE2AFCFC550071C5CA /* ImageBundle.bundle in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = E9DB5CA32AFCFA620071C5CA /* ImageBundle.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E9DB5CB52AFCFD860071C5CA /* 1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DB5CB32AFCFD860071C5CA /* 1@2x.png */; };
+		E9DB5CB62AFCFD860071C5CA /* 1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DB5CB42AFCFD860071C5CA /* 1@3x.png */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E9DB5CAF2AFCFC550071C5CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9DB5BF52AFC8DAF0071C5CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9DB5CA22AFCFA620071C5CA;
+			remoteInfo = ImageBundle;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		E9DB5C702AFC91B80071C5CA /* Embed Frameworks */ = {
@@ -28,6 +42,17 @@
 			files = (
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9DB5CB12AFCFC550071C5CA /* Embed PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E9DB5CAE2AFCFC550071C5CA /* ImageBundle.bundle in Embed PlugIns */,
+			);
+			name = "Embed PlugIns";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -48,6 +73,9 @@
 		E9DB5C782AFCA79E0071C5CA /* Sdk1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sdk1.framework; sourceTree = "<group>"; };
 		E9DB5C792AFCA79E0071C5CA /* SDK3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDK3.framework; sourceTree = "<group>"; };
 		E9DB5C7A2AFCA79E0071C5CA /* SDK2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDK2.framework; sourceTree = "<group>"; };
+		E9DB5CA32AFCFA620071C5CA /* ImageBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9DB5CB32AFCFD860071C5CA /* 1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1@2x.png"; sourceTree = "<group>"; };
+		E9DB5CB42AFCFD860071C5CA /* 1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,15 +89,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E9DB5CA02AFCFA620071C5CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		E9DB5BF42AFC8DAF0071C5CA = {
 			isa = PBXGroup;
 			children = (
-				E9DB5C9A2AFCF98A0071C5CA /* Images */,
+				E9DB5CB22AFCFD860071C5CA /* Images */,
 				E9DB5BFF2AFC8DAF0071C5CA /* SDKDependence */,
 				E9DB5BFE2AFC8DAF0071C5CA /* Products */,
+				E9DB5CAD2AFCFC550071C5CA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				E9DB5BFD2AFC8DAF0071C5CA /* SDKDependence.app */,
+				E9DB5CA32AFCFA620071C5CA /* ImageBundle.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,9 +147,18 @@
 			path = libs;
 			sourceTree = "<group>";
 		};
-		E9DB5C9A2AFCF98A0071C5CA /* Images */ = {
+		E9DB5CAD2AFCFC550071C5CA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9DB5CB22AFCFD860071C5CA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E9DB5CB32AFCFD860071C5CA /* 1@2x.png */,
+				E9DB5CB42AFCFD860071C5CA /* 1@3x.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -128,15 +174,34 @@
 				E9DB5BFA2AFC8DAF0071C5CA /* Frameworks */,
 				E9DB5BFB2AFC8DAF0071C5CA /* Resources */,
 				E9DB5C702AFC91B80071C5CA /* Embed Frameworks */,
+				E9DB5CB12AFCFC550071C5CA /* Embed PlugIns */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E9DB5CB02AFCFC550071C5CA /* PBXTargetDependency */,
 			);
 			name = SDKDependence;
 			productName = SDKDependence;
 			productReference = E9DB5BFD2AFC8DAF0071C5CA /* SDKDependence.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E9DB5CA22AFCFA620071C5CA /* ImageBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9DB5CA42AFCFA620071C5CA /* Build configuration list for PBXNativeTarget "ImageBundle" */;
+			buildPhases = (
+				E9DB5C9F2AFCFA620071C5CA /* Sources */,
+				E9DB5CA02AFCFA620071C5CA /* Frameworks */,
+				E9DB5CA12AFCFA620071C5CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageBundle;
+			productName = ImageBundle;
+			productReference = E9DB5CA32AFCFA620071C5CA /* ImageBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -150,6 +215,9 @@
 					E9DB5BFC2AFC8DAF0071C5CA = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
+					E9DB5CA22AFCFA620071C5CA = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
 				};
 			};
 			buildConfigurationList = E9DB5BF82AFC8DAF0071C5CA /* Build configuration list for PBXProject "SDKDependence" */;
@@ -161,11 +229,12 @@
 				Base,
 			);
 			mainGroup = E9DB5BF42AFC8DAF0071C5CA;
-			productRefGroup = E9DB5BFE2AFC8DAF0071C5CA /* Products */;
+			productRefGroup = E9DB5BF42AFC8DAF0071C5CA;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				E9DB5BFC2AFC8DAF0071C5CA /* SDKDependence */,
+				E9DB5CA22AFCFA620071C5CA /* ImageBundle */,
 			);
 		};
 /* End PBXProject section */
@@ -175,9 +244,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9DB5CAC2AFCFB840071C5CA /* ImageBundle.bundle in Resources */,
 				E9DB5C102AFC8DB20071C5CA /* LaunchScreen.storyboard in Resources */,
 				E9DB5C0D2AFC8DB20071C5CA /* Assets.xcassets in Resources */,
 				E9DB5C0B2AFC8DAF0071C5CA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9DB5CA12AFCFA620071C5CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9DB5CB52AFCFD860071C5CA /* 1@2x.png in Resources */,
+				E9DB5CB62AFCFD860071C5CA /* 1@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +274,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E9DB5C9F2AFCFA620071C5CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E9DB5CB02AFCFC550071C5CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9DB5CA22AFCFA620071C5CA /* ImageBundle */;
+			targetProxy = E9DB5CAF2AFCFC550071C5CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E9DB5C092AFC8DAF0071C5CA /* Main.storyboard */ = {
@@ -391,6 +485,50 @@
 			};
 			name = Release;
 		};
+		E9DB5CA52AFCFA620071C5CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4825PPV66L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pingan.dudai.dev.ImageBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		E9DB5CA62AFCFA620071C5CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4825PPV66L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pingan.dudai.dev.ImageBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -408,6 +546,15 @@
 			buildConfigurations = (
 				E9DB5C172AFC8DB20071C5CA /* Debug */,
 				E9DB5C182AFC8DB20071C5CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9DB5CA42AFCFA620071C5CA /* Build configuration list for PBXNativeTarget "ImageBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9DB5CA52AFCFA620071C5CA /* Debug */,
+				E9DB5CA62AFCFA620071C5CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

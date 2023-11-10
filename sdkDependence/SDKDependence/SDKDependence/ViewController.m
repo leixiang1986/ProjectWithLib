@@ -19,6 +19,9 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   // Do any additional setup after loading the view.
+  
+  UIImage *image = [UIImage imageNamed:@"ImageBundle.bundle/1.png"];
+  NSLog(@"image = %@--%f",image,[UIScreen mainScreen].scale);
   [Person1 test];
   [Person2 test];
   [Person3 test];
